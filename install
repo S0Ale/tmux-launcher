@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SCRIPT_DIR="$HOME/.local/share/tmux-scripts/"
+BIN_DIR="/usr/local/bin"
+
+MAIN_MIN="tmuxl"
+
+echo "Creating scripts directory..."
+mkdir -p "$SCRIPT_DIR"
+cp "test.sh" "$SCRIPT_DIR"
+
+echo "Installing binaries..."
+sudo cp "$MAIN_MIN" "$BIN_DIR/"
+sudo chmod +x "$BIN_DIR/$MAIN_MIN"
+
+echo "Installation complete!"
