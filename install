@@ -8,6 +8,7 @@ MAIN_MIN="tmuxl"
 echo "Creating scripts directory..."
 mkdir -p "$SCRIPT_DIR"
 cp "test.sh" "$SCRIPT_DIR"
+cp "test2.sh" "$SCRIPT_DIR"
 
 echo "Installing binaries..."
 sudo cp "$MAIN_MIN" "$BIN_DIR/"
