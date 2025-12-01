@@ -39,6 +39,8 @@ if [[ ! -x "$SCRIPT_DIR/$1" ]]; then
 	exit 1
 fi
 COMMENT
+scriptName=$1
+shift
 
-echo "Executing tmux script: '$1'"
-sh "$SCRIPT_DIR/$1.sh"
+echo "Executing tmux script: '$scriptName'"
+sh "$SCRIPT_DIR/$scriptName.sh" "$@"
